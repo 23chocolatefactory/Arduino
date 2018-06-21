@@ -12,6 +12,7 @@ volatile int LeftGo;
 volatile int rightState = digitalRead(3);
 volatile int leftState  = digitalRead(2);
 
+// Any variable with Right or Left after it just describes what LED strip it is affiliated with
 int dataPinRight  = 5;
 int clockPinRight = 6;
 LPD8806 ledRight  = LPD8806(24, dataPinRight, clockPinRight);
